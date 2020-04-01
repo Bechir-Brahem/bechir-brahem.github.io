@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="snake.css">
+	 <link rel="icon" href="orange-running-icon-on-transparent-background-hi.png"  sizes="any" type="image/png" >
+	<title>run boy run</title>
+</head>
+<body>
+	<div id="myCanvas">
+		<p id="score"></p>
+		<div class="snake"></div>
+		<div class="meal"></div>
+		<div class="pause">
+			<span class="in">
+				<div id="continue" ><p class="text">PLAY</p></div>
+				<div id="shabby"></div>
+				<div id="reset" ><p class="text">RESET</p></div>
+				<div id="slidecontainer">
+					<p id="difficulty" >difficulty:</p>
+					<div>
+						<p id="difficulty">
+							<span id="easy">
+								EASY
+							</span>
+
+							<span id="hard" >
+								HARD
+							</span>
+						</p>
+					</div>
+					<input type="range" min="10" max="40" value="1" class="slider" id="myRange">
+				</div>
+			</span>
+		</div>
+		<div class="obs"></div>
+
+		<p id="kaps"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>press  space to pause</strong></p>
+	</div>
+	<script type="text/javascript" src="snake.js"></script>
+
