@@ -8,6 +8,12 @@
     color: #FDE8E9 !important;
     font-size: 1.5rem;
     font-weight: 100;
+
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .nav-link:hover {
@@ -50,9 +56,21 @@ p.lead{
 	height:7vh;
 }
 
-.navbar.scrolled{
-	background-color:#8f2d56;
+.navbar {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
 }
+
+.navbar.scrolled {
+    background: rgb(68, 68, 68); /* IE */
+    background:#8f2d56cc; 
+}
+/* .navbar.scrolled{ */
+	/* background-color:#8f2d56; */
+/* } */
 @media (max-width:1400px) {
 
     #pp h1 {
