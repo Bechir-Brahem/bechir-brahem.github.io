@@ -16,22 +16,19 @@ function padZero(str, len) {
 }
 
 
-function highlight(name) {
-    var a = document.getElementById(name);
+function highlight(a) {
+
     //generates a random hex
     var randomBgColor ="#"+ Math.floor(Math.random() * 16777215).toString(16);
     var inverseColor=invertHex(randomBgColor);
-
-    console.log(randomBgColor,inverseColor)
 
     a.style.backgroundColor = randomBgColor;
     a.style.color=inverseColor;
 }
 // add event handlers
-for (var i = 0; i < 5; i++) {
-    document.getElementById("l" + i).addEventListener("click", myFunction);
-}
-
-function myFunction(e) {
-    highlight(e.target.id);
-}
+document.querySelector("body").addEventListener("click", (e)=>{
+    if(e.target.tagName=="LI")
+    {
+        highlight(e.target);
+    }
+});
